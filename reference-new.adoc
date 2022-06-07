@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.11.0에는 새로운 개선 사항이 포함되어 있습니다. 
+---
+= Cloud Volumes ONTAP 9.11.0의 새로운 기능
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.11.0에는 새로운 개선 사항이 포함되어 있습니다.
+
+최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
+
+
+
+== 탄성 체적 지원(2022년 6월 6일)
+
+Cloud Volumes ONTAP 애그리게이트에서 Amazon EBS Elastic Volumes 기능을 지원하여 더 나은 성능과 추가 용량을 제공하는 동시에 Cloud Manager가 필요에 따라 기본 디스크 용량을 자동으로 늘릴 수 있습니다.
+
+Cloud Manager Connector의 3.9.19 릴리즈부터 Elastic Volumes를 지원할 수 있으며 특정 Cloud Volumes ONTAP 버전 및 특정 EBS 디스크 유형에서 지원됩니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"^]
+
+
+
+== 9.11.0 P1(2022년 5월 2일)
+
+Cloud Volumes ONTAP 9.11.0 P1 릴리스는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리스에는 다음과 같은 향상된 기능이 포함되어 있습니다.
+
+
+
+=== AWS에서 ONTAP S3 지원
+
+이제 AWS의 Cloud Volumes ONTAP에서 S3 오브젝트 스토리지를 제공할 수 있습니다(Microsoft Azure는 이미 지원됩니다). Cloud Volumes ONTAP은 NFS 및 SMB와 같은 기존의 파일 기반 프로토콜 외에도 스케일아웃 스토리지 옵션으로 S3를 지원합니다.
+
+다음 사항에 유의하십시오.
+
+* Cloud Volumes ONTAP를 사용하는 ONTAP S3의 주요 사용 사례는 범용 오브젝트 저장소입니다.
+* 현재 S3 프로토콜은 Google Cloud의 Cloud Volumes ONTAP에서 지원되지 않습니다.
+* Cloud Manager는 ONTAP S3 기능에 대한 관리 기능을 제공하지 않습니다.
+
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^].
+
+
+
+== 노트 업그레이드
+
+이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.
+
+
+
+=== 업그레이드 방법
+
+Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
+
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"^].
+
+
+
+=== 지원되는 업그레이드 경로입니다
+
+9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.0으로 업그레이드할 수 있습니다. Cloud Manager에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지를 표시합니다.
+
+
+
+=== 커넥터의 필수 버전입니다
+
+기존 시스템을 9.11.0으로 업그레이드하려면 Cloud Manager Connector에서 버전 3.9.18 이상을 실행해야 합니다.
+
+
+TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
+
+
+
+=== 알아 보십시오
+
+* 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
+* HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
+
+
+
+
+=== C4, M4 및 R4 인스턴스 유형
+
+9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.
+
+C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.
