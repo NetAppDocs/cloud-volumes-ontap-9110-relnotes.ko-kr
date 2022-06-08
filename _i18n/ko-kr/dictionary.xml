@@ -382,11 +382,9 @@
   <block id="8e54c9dd2c325f6430e1789d91c327ee" category="list-text">E8ds_v4^1^</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4^1^</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4^1^</block>
-  <block id="195512f323b29b79f5b71cceb3a49a7d" category="list-text">E80ids_v4^2^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">지원되는 디스크 유형입니다</block>
   <block id="8dbeeeefc901c0dbb39a9c1332aaeeb9" category="cell">프리미엄 페이지 Blob</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">쓰기 속도 선택에 대해 자세히 알아보세요</block>
-  <block id="937cb82fad9af153ff18d3ee14caebd5" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">이 VM은 Azure 유지 관리 제어가 필요한 경우에만 권장됩니다. 더 높은 가격 책정으로 인해 다른 사용 사례에는 권장되지 않습니다.</block>
   <block id="d642bc6852e213242f2c21d17b6d3e43" category="list-text">PAYGO Explore는 Azure의 HA 쌍에서 지원되지 않습니다.</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">지원되는 디스크 크기입니다</block>
@@ -752,4 +750,7 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="69c66585077895e1652860605b3e1687" category="section-title">탄성 볼륨 지원(2022년 6월 7일)</block>
+  <block id="0d8238cb20fb41ede1eb68d45d598c4f" category="list-text">단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 구축 중 또는 이후에 언제든지 Cloud Manager에서 빠른 쓰기 속도를 설정할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
+  <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4^1,2^</block>
+  <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 구축 중 또는 이후에 언제든지 Cloud Manager에서 빠른 쓰기 속도를 설정할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
 </blocks>
