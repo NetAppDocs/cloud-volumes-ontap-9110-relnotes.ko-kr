@@ -84,9 +84,7 @@
   <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">라이센스당 368TB</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">용량 기반 라이센스</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PiB</block>
-  <block id="2819feead2b07762a4465189ab8b2f52" category="section-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TB의 용량을 가질 수 있습니다.</block>
-  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="section-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
   <block id="1ddc84b3dc9fe6599d89fd9b7f5c6660" category="paragraph">아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TB 디스크를 구매하는 경우 Cloud Manager에서는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">디스크 및 계층화 제한</block>
   <block id="49e0d392d83f24aa1384f18b22975ef6" category="paragraph">아래 표에는 디스크 단독으로, 디스크 및 콜드 데이터를 오브젝트 스토리지로 계층화하는 경우 최대 시스템 용량이 나와 있습니다. 디스크 제한은 사용자 데이터가 포함된 디스크에만 적용됩니다. 이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
@@ -209,13 +207,10 @@
   <block id="4a67bdd5f30eeac9ad064fc6433dc926" category="cell">10TiB</block>
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368TiB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">라이센스당 368TiB입니다</block>
-  <block id="2f9882645b2c32820ad085240bacb763" category="section-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.</block>
-  <block id="fc9a388cd18c69244f22554de6f0d544" category="section-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
   <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TiB 디스크를 구매하는 경우 Cloud Manager는 미러링된 데이터에 사용되는 노드 B에도 8TiB 디스크를 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2 인스턴스별로 디스크 및 계층화가 제한됩니다</block>
   <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 크기는 16TiB입니다. 아래 섹션에는 EC2 인스턴스 유형 중 많은 수의 디스크 제한이 서로 다르기 때문에 EC2 인스턴스 제품군별 디스크 및 계층화 제한이 나와 있습니다. 또한 디스크 제한은 단일 노드 시스템과 HA 쌍 간에 다릅니다.</block>
-  <block id="e197fb210372b9fefa18060ae467b367" category="list-text">C4, M4 및 R4 인스턴스 유형은 새로운 Cloud Volumes ONTAP 9.10.0 시스템에서 지원되지 않습니다. 그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 9.10.0 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">아래의 디스크 제한은 사용자 데이터를 포함하는 디스크에만 적용됩니다. 이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오</block>
   <block id="bb1dfd389b14b44028041022a8d2899f" category="list-text">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>.<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>.</block>
@@ -755,4 +750,5 @@
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 구축 중 또는 이후에 언제든지 Cloud Manager에서 빠른 쓰기 속도를 설정할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xLarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xLarge</block>
+  <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">이 릴리즈에서는 C4, M4 및 R4 인스턴스 유형이 새 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 이 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</block>
 </blocks>
